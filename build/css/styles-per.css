@@ -161,10 +161,10 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -239,10 +239,10 @@ input:focus {
 
 .debugGrid > div {
   height: inherit;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .debugGrid > div > div {

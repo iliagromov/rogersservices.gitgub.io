@@ -161,10 +161,10 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 ::-webkit-scrollbar {
@@ -239,10 +239,10 @@ input:focus {
 
 .debugGrid > div {
   height: inherit;
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .debugGrid > div > div {
@@ -250,16 +250,16 @@ input:focus {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .debugGrid > div > div > div {
   box-sizing: border-box;
   word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(8.333333333333334% - 30px);
+  margin-left: 0px;
+  margin-right: 0px;
+  width: calc(8.333333333333334% - 0px);
   height: inherit;
   outline: 1px solid #ff0;
   background: rgba(0, 0, 0, 0.4);

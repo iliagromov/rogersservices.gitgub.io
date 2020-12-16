@@ -1,10 +1,10 @@
 module.exports = {
 	columns: 12,
-	offset: "30px",
+	offset: "0px",
 	//mobileFirst: true,
 	container: {
-        maxWidth: "1200px",
-        fields: "30px"
+        maxWidth: "1920px",
+        fields: "0px"
     },
 	breakPoints: {
 		md: {
