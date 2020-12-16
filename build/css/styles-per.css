@@ -307,100 +307,111 @@ input:focus {
   z-index: -1;
 }
 
-.banner.animated .page__title-h1 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
+.page__title-h1 {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 121.18%;
+  letter-spacing: -0.025em;
+  color: #ffffff;
 }
 
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.page__text {
+  font-family: 'OpenSans-Regular';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 148.9%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
 }
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
-.banner.animated .page__text {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: lightSpeedInRight;
-  animation-name: lightSpeedInRight;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
+.header__menu {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 30px;
+  margin: 60px 0 0 60px;
 }
 
-@-webkit-keyframes lightSpeedInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.header__menu .line,
+.header__menu::before,
+.header__menu::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  background-color: #16E0D4;
+  width: 40px;
+  height: 4px;
+  border-radius: 2.5px;
+  top: 0;
+  left: 0;
+  margin-bottom: 5px;
 }
 
-@keyframes lightSpeedInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
+.banner {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.55%;
+  margin-right: -1.55%;
+  height: 100vh;
+  position: relative;
+}
 
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
+.banner__content {
+  position: relative;
+  width: 46.9%;
+  height: 100%;
+}
 
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-  }
+.banner__content-text {
+  width: 46.9%;
+  background-color: #2F3D4E;
+  position: relative;
+  height: 100%;
+  padding: 174px 0 0 170px;
+  box-sizing: border-box;
+}
 
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.banner__content-text .page__title-h1 {
+  margin-top: 120px;
+  margin-bottom: 42px;
+  width: 163.56666667%;
+}
+
+.banner__content-text .page__text {
+  width: 63.56666667%;
+}
+
+.banner__content_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2F3D4E;
+  opacity: 0.8;
+}
+
+.banner__bg {
+  width: 71.9%;
+  margin-left: -23.45%;
+  background-image: url('../assets/img/img-banner.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -25px -15px;
 }
 
 @media screen and (max-width: 920px) {
