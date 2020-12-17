@@ -1,0 +1,32 @@
+.about{
+    .row-flex();
+    &__media{
+        position: relative;
+        .size(6);
+        .page_bg-opacity-blueDark{
+            .size(6);
+            position: absolute;
+            height: 100%;
+            opacity: 0.4;
+        }
+    }
+    &__content{
+        .size(6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .page__subtitle{
+            padding: 0% 20%;
+        }
+        &-text{
+            padding: 0% 16%;
+        }
+        .page__text{
+            color: @color_blueDark;
+            font-size: 14px;
+            line-height: 196.4%;
+            /* or 27px */
+            padding-bottom: 2%;
+        }
+    }
+}

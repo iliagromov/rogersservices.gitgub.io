@@ -11,6 +11,12 @@
         }
 
     }
+    &__subtitle{
+        font-family: @fontRegular;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 44px;
+    }
     &__text{
         font-family: @fontRegular;
         font-size: 18px;
@@ -19,5 +25,15 @@
         line-height: 148.9%; // 27px
         letter-spacing: -0.01em;
         color: @color_white;
+    }
+    &_bold {
+        font-weight: bold;
+    }
+    &_bg{
+        &-opacity{
+            &-blueDark{
+                background-color: @color_blueDark;
+            }
+        }
     }
 }
