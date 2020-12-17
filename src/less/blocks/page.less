@@ -58,14 +58,23 @@
         color: @color_lightGreen;
         letter-spacing: -0.005em;
         &_arrow{
-           
-            &-green{
+            &-green,
+            &-gray{
                 &::after{
                     content: '';
-                    .sprite(@icon-arrow-green);
                     display: inline-block;
                     vertical-align: bottom;
                     margin-left: 12px;
+                }
+            }
+            &-green{
+                &::after{
+                    .sprite(@icon-arrow-green);
+                }
+            }
+            &-gray{
+                &::after{
+                    .sprite(@icon-arrow-gray);
                 }
             }
         }
@@ -93,6 +102,9 @@
         &-opacity{
             &-blueDark{
                 background-color: @color_blueDark;
+            }
+            &-lightBlue{
+                background-color: @color_lightBlue;
             }
         }
     }
