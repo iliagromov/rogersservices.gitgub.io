@@ -196,21 +196,21 @@ img {
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.eot") format("eot");
+  font-family: 'OpenSansHebrew-Bold';
+  src: url('../fonts/OpenSansHebrew/OpenSansHebrew-Bold.ttf') format('truetype'), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Bold.eot") format("eot");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.eot") format("eot");
+  font-family: 'OpenSansHebrew-Regular';
+  src: url('../fonts/OpenSansHebrew/OpenSansHebrew-Regular.ttf') format('truetype'), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.woff") format("woff"), url("../fonts/OpenSansHebrew/OpenSansHebrew-Regular.eot") format("eot");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSansHebrew-Regular';
 }
 
 a,
@@ -229,6 +229,10 @@ input {
 
 input:focus {
   outline: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .debugGrid {
@@ -307,9 +311,14 @@ input:focus {
   z-index: -1;
 }
 
-.page__title-h1 {
-  font-family: 'OpenSans-Regular';
+.page__title-h1,
+.page__title-h2,
+.page__title-h3 {
+  font-family: 'OpenSansHebrew-Regular';
   font-style: normal;
+}
+
+.page__title-h1 {
   font-weight: 600;
   font-size: 75px;
   line-height: 121.18%;
@@ -317,21 +326,77 @@ input:focus {
   color: #ffffff;
 }
 
+.page__title-h2 {
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 121.18%;
+  /* identical to box height, or 175px */
+  text-transform: uppercase;
+}
+
+.page__title-h3 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 121.18%;
+  /* identical to box height, or 51px */
+  letter-spacing: 1.5px;
+}
+
 .page__subtitle {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSansHebrew-Regular';
   font-weight: 300;
   font-size: 32px;
   line-height: 44px;
 }
 
 .page__text {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSansHebrew-Regular';
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
   line-height: 148.9%;
   letter-spacing: -0.01em;
   color: #ffffff;
+}
+
+.page__link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 121.18%;
+  /* or 19px */
+  color: #16E0D4;
+  letter-spacing: -0.005em;
+}
+
+.page__link_arrow-green::after {
+  content: '';
+  background-image: url(../assets/icons/sprite.png);
+  background-position: -85px -89px;
+  width: 17px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 12px;
+}
+
+.page__btn {
+  border: none;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  background-color: #3F5672;
+}
+
+.page__icon_arrow-white {
+  background-image: url(../assets/icons/sprite.png);
+  background-position: 0px 0px;
+  width: 38px;
+  height: 39px;
 }
 
 .page_bold {
@@ -472,6 +537,48 @@ input:focus {
   line-height: 196.4%;
   /* or 27px */
   padding-bottom: 2%;
+}
+
+.services {
+  background-color: #38495F;
+  position: relative;
+  padding-left: 7%;
+  min-height: 585px;
+}
+
+.services-items {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 7% 0;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 100%;
+}
+
+.services-items__item {
+  width: calc(41.66666666666667% - 0px);
+}
+
+.services .page__title-h2,
+.services .page__title-h3 {
+  color: #ffffff;
+}
+
+.services .page__title-h2 {
+  line-height: 99px;
+}
+
+.services .page__title-h3 {
+  margin: 34px 0 16px;
+}
+
+.services .page__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media screen and (max-width: 920px) {

@@ -1,0 +1,41 @@
+.services{
+    background-color: @color_blue;
+    position: relative;
+    padding-left: 7%;
+    min-height: 585px;
+    &-items{
+        .row-flex();
+        padding: 7% 0;
+        flex-wrap: nowrap;
+        position: absolute;
+        width: 100%;
+        &__item{
+            .size(5);
+            // &:nth-of-type(n + 2){
+            //     .size(5);
+            // }
+            // // &:nth-of-type(2){
+            // //     .size(5);
+            // // }
+            // &:nth-of-type(3){
+            //     .size(3);
+            // }
+
+        }
+    }
+    .page__title-h2,
+    .page__title-h3{
+        color: @color_white;
+    }
+    .page__title-h2{
+        line-height: 99px;
+    }
+    .page__title-h3{
+        margin: 34px 0 16px;
+    }
+    .page__btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

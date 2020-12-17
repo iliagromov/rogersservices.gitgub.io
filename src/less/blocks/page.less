@@ -1,14 +1,38 @@
 .page{
     &__title{
-        &-h1{
+        &-h1,
+        &-h2,
+        &-h3{
             font-family: @fontRegular;
             font-style: normal;
+        }
+        &-h1{
+          
             font-weight: 600;
             font-size: 75px;
             line-height: 121.18%; // 91px
             letter-spacing: -0.025em;
             color: @color_white;
         }
+        &-h2{
+            font-weight: bold;
+            font-size: 144px;
+            line-height: 121.18%;
+            /* identical to box height, or 175px */
+            
+            // letter-spacing: -0.025em;
+            text-transform: uppercase;
+        }
+        &-h3{
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 121.18%;
+            /* identical to box height, or 51px */
+
+            // letter-spacing: -0.005em;
+            letter-spacing: 1.5px;
+        }
+
 
     }
     &__subtitle{
@@ -25,6 +49,42 @@
         line-height: 148.9%; // 27px
         letter-spacing: -0.01em;
         color: @color_white;
+    }
+    &__link{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 121.18%;
+        /* or 19px */
+        color: @color_lightGreen;
+        letter-spacing: -0.005em;
+        &_arrow{
+           
+            &-green{
+                &::after{
+                    content: '';
+                    .sprite(@icon-arrow-green);
+                    display: inline-block;
+                    vertical-align: bottom;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    &__btn{
+        border: none;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:@color_blueDark3F;
+    }
+    &__icon{
+        &_arrow{
+            &-white{
+                .sprite(@icon-arrow-white);
+            }
+        }
     }
     &_bold {
         font-weight: bold;
