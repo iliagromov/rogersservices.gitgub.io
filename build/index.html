@@ -8,13 +8,13 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
-		<div class="page">
-			<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-			<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-			<div class="debugGrid debugGrid__z-index-negative"></div>
-			<header class="header">
-				<div class="header__menu"><span class="line"></span></div>
-			</header>
+		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
+		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
+		<div class="debugGrid debugGrid__z-index-negative"></div>
+		<header class="header">
+			<div class="header__menu"><span class="line"></span></div>
+		</header>
+		<main class="page">
 			<section class="banner">
 				<div class="banner__content">
 					<div class="banner__content_bg"></div>
@@ -130,7 +130,27 @@
 					</div>
 				</div>
 			</section>
-		</div>
+			<section class="contact">
+				<div class="contact_bg"></div>
+				<div class="contact-content">
+					<div class="contact-content__text">
+						<h2 class="page__title-h2">Contact us</h2>
+						<p class="page__text">Please fill out the form below and our team will be in touch with you promptly. From maintenance to performance, let us get the job done for you.</p><a class="page__link page__link_arrow-gray" href="javascript:void(0)">Submit</a>
+					</div>
+					<div class="contact-content__info">
+						<h4 class="page__title-h4">Rogers Corporate Office</h4>
+						<address class="page_address">
+							<div class="page__text">2050 Marconi Drive, Suite 100 Alpharetta, GA 30005</div>
+						</address><a class="page__link page__link_phone" href="tel:770-772-3400">770-772-3400</a><a class="page__link page__link_fax" href="fax:1-866-592-9161">1-866-592-9161</a>
+					</div>
+				</div>
+				<div class="contact-map">
+					<picture>
+						<sourse srcset="assets/img/img-map.png"></sourse><img src="assets/img/img-map.webp" alt="">
+					</picture>
+				</div>
+			</section>
+		</main>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="js/main.js"></script>
 	</body>
