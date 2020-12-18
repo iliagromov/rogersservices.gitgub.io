@@ -19,7 +19,7 @@
     &-content{
         position: relative;
         display: flex;
-        padding: 5% 0 0% 0%;
+        padding: 5% 0 5% 0%;    
         .size(12);
         .shift-left(3);
         .page__title-h2,
@@ -56,8 +56,9 @@
             padding: 2% 0 0 0;
             box-sizing: border-box;
             .page__title-h4{
-                .size(4.2);
+                // width: calc(38% - 0px);
                 margin-bottom: 25px;
+                font-size: 18px;
             }
             .page_address{
                 .size(5.8);
@@ -65,6 +66,12 @@
             .page__link{
                 .size(12);
             }
+            .page_address{
+                .page__text{
+                    font-size: 1vw;
+                }
+            }
+           
             .page_address,
             .page__link{
                
@@ -74,7 +81,7 @@
                 line-height: 148.9%;
                 /* identical to box height, or 27px */
                 letter-spacing: -0.01em;
-                margin-bottom: 16px;
+                margin-bottom: 4%;
             }
 
         }
@@ -82,8 +89,9 @@
     &-map{
         // flex-basis: 36%;
         .size(6);
-        picture{
-            display: flex;
+        display: flex;
+        img{
+            object-fit: cover;
         }
     }
     
