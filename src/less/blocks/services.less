@@ -3,9 +3,11 @@
     position: relative;
     padding-left: 7%;
     min-height: 585px;
+    overflow: hidden;
     &-items{
         .row-flex();
         padding: 7% 0;
+        overflow: scroll;
         flex-wrap: nowrap;
         position: absolute;
         width: 100%;
@@ -28,7 +30,8 @@
         color: @color_white;
     }
     .page__title-h2{
-        line-height: 99px;
+        // line-height: 99px;
+        line-height: 66%;
     }
     .page__title-h3{
         margin: 34px 0 16px;

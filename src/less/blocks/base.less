@@ -13,9 +13,16 @@
 @font-face {
   .font(@font; @fontRegular);
 }
+@font-face {
+  .font(@OpenSans; '@{OpenSans}-Regular');
+}
+@font-face {
+  .font(@OpenSans; '@{OpenSans}-Semibold');
+}
 
 body {
   font-family: @fontRegular;
+  transition: all .5s ease-out;
 }
 a, button{
   cursor: pointer;
@@ -31,4 +38,8 @@ input{
 }
 a{
   text-decoration: none;
+  
+}
+video{
+  max-width: 100%;
 }

@@ -1,29 +1,29 @@
 .page{
     &__title{
-        &-h1,
-        &-h2,
-        &-h3{
+        &-h1{
             font-family: @fontRegular;
             font-style: normal;
-        }
-        &-h1{
-          
             font-weight: 600;
-            font-size: 75px;
-            line-height: 121.18%; // 91px
-            letter-spacing: -0.025em;
+            // font-size: 75px;
+            font-size: 4vw;
+            line-height: 121.18%; // 91px or 9vh;
+            letter-spacing: -0.01em;
+
             color: @color_white;
         }
         &-h2{
+            font-family: @fontBold;
             font-weight: bold;
-            font-size: 144px;
+            // font-size: 144px;
+            font-size: 7.5vw;
             line-height: 121.18%;
             /* identical to box height, or 175px */
             
-            // letter-spacing: -0.025em;
+            letter-spacing: -0.025em;
             text-transform: uppercase;
         }
         &-h3{
+            font-family: @fontBold;
             font-weight: bold;
             font-size: 42px;
             line-height: 121.18%;
@@ -35,7 +35,8 @@
         &-h4{
             font-family: @fontBold;
             font-weight: bold;
-            font-size: 18px;
+            // font-size: 18px;
+            font-size: .95vw;
             line-height: 148.9%;
             /* or 27px */
             letter-spacing: -0.01em;
@@ -46,9 +47,12 @@
     }
     &__subtitle{
         font-family: @fontRegular;
-        font-weight: 300;
-        font-size: 32px;
-        line-height: 44px;
+        font-weight: 100;
+        // font-size: 32px;
+        // line-height: 44px;
+        font-size: 1.7vw;
+        line-height: 136%;
+        color:@color_blueDark;
     }
     &__text{
         font-family: @fontRegular;
@@ -61,7 +65,10 @@
     }
     &__link{
         font-weight: normal;
-        font-size: 16px;
+        font-size: 0.9vw;
+        display: flex;
+        align-items: center;
+        // font-size: 16px;
         line-height: 121.18%;
         /* or 19px */
         color: @color_lightGreen;
@@ -87,7 +94,9 @@
                 }
             }
         }
-        
+        &:hover{
+            text-decoration: underline;
+          }
         &_phone,
         &_fax{
             &::before{
@@ -116,6 +125,12 @@
         align-items: center;
         justify-content: center;
         background-color:@color_blueDark3F;
+        &:active{
+            background-color:@color_blue;
+        }
+        &_play{
+
+        }
     }
     &__icon{
         &_arrow{
@@ -135,9 +150,13 @@
         &_in{
             .sprite(@icon-linkedin);
         }
+        &_play{
+            .sprite(@icon-play);
+        }
     }
     &_bold {
         font-weight: bold;
+        font-family: @fontBold;
     }
     &_bg{
         &-opacity{
@@ -153,8 +172,8 @@
         &::before{
             content: '';
             .sprite(@icon-placeholder);
-            display: flex;
-            flex-basis: 30%;
+            min-width: 20px;
+            margin-right: 9px;
         }
     }
 }

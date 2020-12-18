@@ -8,9 +8,6 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
-		<button class="debugGrid-btn debugGrid-btn__create" onclick="debugGridCreate()"></button>
-		<button class="debugGrid-btn debugGrid-btn__remove debugGrid-btn__hidden" onclick="debugGridRemove()"></button>
-		<div class="debugGrid debugGrid__z-index-negative"></div>
 		<header class="header">
 			<div class="header__menu"><span class="line"></span></div>
 		</header>
@@ -19,7 +16,7 @@
 				<div class="banner__content">
 					<div class="banner__content_bg"></div>
 					<div class="banner__content-text">
-						<div class="page__logo"><img class="page__img" src="assets/img/logo.webp" alt=""></div>
+						<div class="page__logo"><img class="page__img" src="assets/img/logo.png" alt=""></div>
 						<h1 class="page__title-h1">The Leading Facility Service Provider</h1>
 						<p class="page__text">for all of your electrical, lighting, HVAC, plumbing, distribution and contractor service needs.</p>
 					</div>
@@ -28,7 +25,7 @@
 			</section>
 			<section class="about">
 				<div class="about__media">
-					<div class="page_bg-opacity-blueDark"></div><img src="assets/img/img-about.webp" alt="">
+					<div class="page_bg-opacity-blueDark"></div><img src="assets/img/img-about.png" alt="">
 				</div>
 				<div class="about__content">
 					<div class="page__subtitle"><span class="page_bold">With more than 1500 employees and 13&nbsp;offices nationwide,</span>Rogers is&nbsp;the largest self-performing electrical and lighting contractor in&nbsp;the&nbsp;US.</div>
@@ -42,7 +39,12 @@
 					</div>
 				</div>
 				<div class="about__media">
-					<video src="" alt="" poster="assets/img/img-video.webp"></video>
+					<div class="page__video">
+						<video controls muted src="https://player.vimeo.com/video/491692296" alt="" poster="assets/img/img-video.png"></video>
+						<button class="page__btn page__btn_play">
+							<div class="page__icon_play"></div>
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="services">
@@ -52,23 +54,23 @@
 				</button>
 				<div class="services-items">
 								<div class="services-items__item">
-									<div class="page__icon"><img src="assets/img/icon-electro.webp" alt="icon"></div>
+									<div class="page__icon"><img src="assets/img/icon-electro.png" alt="icon"></div>
 									<h3 class="page__title-h3">Electrical</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 								</div>
 								<div class="services-items__item">
-									<div class="page__icon"><img src="assets/img/icon-keys.webp" alt="icon"></div>
+									<div class="page__icon"><img src="assets/img/icon-keys.png" alt="icon"></div>
 									<h3 class="page__title-h3">Construction</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 								</div>
 								<div class="services-items__item">
-									<div class="page__icon"><img src="assets/img/icon-light.webp" alt="icon"></div>
+									<div class="page__icon"><img src="assets/img/icon-light.png" alt="icon"></div>
 									<h3 class="page__title-h3">Lightning</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 								</div>
 								<div class="services-items__item">
-									<div class="page__icon"><img src="assets/img/icon-distribution.webp" alt="icon"></div>
+									<div class="page__icon"><img src="assets/img/icon-distribution.png" alt="icon"></div>
 									<h3 class="page__title-h3">Distribution</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 								</div>
 								<div class="services-items__item">
-									<div class="page__icon"><img src="assets/img/icon-cold.webp" alt="icon"></div>
+									<div class="page__icon"><img src="assets/img/icon-cold.png" alt="icon"></div>
 									<h3 class="page__title-h3">HVAC</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 								</div>
 				</div>
@@ -82,42 +84,42 @@
 						</div>
 					</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-1.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-1.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">Best Buy</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 									</div>
 								</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-2.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-2.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">DHL</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 									</div>
 								</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-3.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-3.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">Amazon</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 									</div>
 								</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-4.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-4.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">Home Depot</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 									</div>
 								</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-5.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-5.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">RaceTrac</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
 									</div>
 								</div>
 								<div class="projects-items__item">
-									<div class="page__img page__img-bg"><img src="assets/img/img-project-6.webp" alt=""></div>
+									<div class="page__img page__img-bg"><img src="assets/img/img-project-6.png" alt=""></div>
 									<div class="page_bg-opacity-blueDark"></div>
 									<div class="projects-items__item-content">
 										<h3 class="page__title-h3">Readerlink</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
@@ -146,7 +148,7 @@
 				</div>
 				<div class="contact-map">
 					<picture>
-						<sourse srcset="assets/img/img-map.png"></sourse><img src="assets/img/img-map.webp" alt="">
+						<sourse srcset="assets/img/img-map.png"></sourse><img src="assets/img/img-map.png" alt="">
 					</picture>
 				</div>
 			</section>

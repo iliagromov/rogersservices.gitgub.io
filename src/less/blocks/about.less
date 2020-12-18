@@ -1,13 +1,29 @@
 .about{
     .row-flex();
+    margin-bottom: -5px;
     &__media{
         position: relative;
+        // display: flex;
         .size(6);
         .page_bg-opacity-blueDark{
             .size(6);
             position: absolute;
+            top: -5px;
+            left: 0;
             height: 100%;
             opacity: 0.4;
+
+        }
+        .page__video{
+            position: relative;
+            // align-self: center;
+            .page__btn_play{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: transparent;
+            }
         }
     }
     &__content{
@@ -16,14 +32,23 @@
         align-items: center;
         justify-content: center;
         .page__subtitle{
-            padding: 0% 20%;
+            // padding: 0% 20%;
+            // or
+            .size(7.4);
+            // padding-top: 4%;
+            margin-left: 3%;
+            padding: 15% 0;
         }
         &-text{
-            padding: 0% 16%;
+            // padding: 0% 16%;
+            
+            .size(8.1);
+            padding: 10% 0;
         }
         .page__text{
             color: @color_blueDark;
             font-size: 14px;
+            // font-size: 0.8vw;
             line-height: 196.4%;
             /* or 27px */
             padding-bottom: 2%;
