@@ -1,0 +1,45 @@
+.follow{
+    .row-flex();
+    height: 480px;
+    position: relative;
+    &-links{
+        .size(3);
+        background-color: @color_lightGreen;
+        display: flex;
+        // flex-wrap: wrap;
+        //fixme column-reverse 
+        flex-direction: column-reverse;
+        // padding: 60px 100px;
+        padding: 7% 3% 5%;
+        box-sizing: border-box;
+        .page__title-h3{
+            color: @color_blueDark;
+            font-family: @fontBold;
+            order: 1;
+            margin-bottom: 26px;
+        }
+        .page__links{
+            display: flex;
+            .page__link{
+                margin-right: 15px
+            }
+        }
+    }
+    &-img{
+        .size(9);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 99% 0px;
+        background-image: url(../assets/img/img-bg-follow.webp);
+        &_bg{
+            .size(3);
+            position: absolute;
+            
+            height: 100%;
+            background-color: @color_blueDark;
+            opacity: 0.4;
+            right: 0;
+        }
+    }
+    
+}
