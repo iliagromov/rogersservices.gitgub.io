@@ -187,7 +187,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #cccccc;
+  background-color: #16E0D4;
   border-radius: 50px;
 }
 
@@ -890,6 +890,24 @@ a {
   background-color: #2F3D4E;
   opacity: 0.4;
   right: 0;
+}
+
+.footer {
+  background-color: #2F3D4E;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.footer .copyright {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 148.9%;
 }
 
 @media screen and (max-width: 920px) {
