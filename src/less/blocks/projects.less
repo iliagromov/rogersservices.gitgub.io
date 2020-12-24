@@ -6,18 +6,44 @@
         position: relative;
         &__item{
             //fixme px
+            cursor: pointer;
             position: relative;
+            overflow: hidden;
+            .size(3);
+
             // height: 480px;
             // height: 47vh;
 
             // width: 480px;
-            .size(3);
+            
             // margin-bottom: -6px;
-            .page__img-bg{
-                position: relative;
-                display: flex;
-                img{
-                    object-fit: cover;
+           
+            &:hover{
+                .page__img{
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+                .page__title-h3,
+                .page__link{
+                    transform: translateY(0);
+                }
+                .page__link{
+                    opacity: 1;
+                }
+            }
+            .page__img{
+             
+                &-bg{
+                    position: relative;
+                    display: flex;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0.5s ease-out;
+                        object-fit: cover;
+
+                    }
                 }
             }
             .page_bg-opacity-blueDark{
@@ -32,6 +58,7 @@
                     .page__title-h3,
                     .page__text{
                         color: @color_blueDark;
+                        
                     }
                     .page__title-h3{
                         font-family:  '@{OpenSans}-Semibold';
@@ -51,6 +78,14 @@
                         padding-left: 2.5%;
                     }
                 }
+                &:first-child{
+                    .projects-items__item-content{
+                        .page__title-h3{
+                            transform: translateY(0);
+                        }
+                    }
+                  
+                }
                 &:last-child{
                     background-color: @color_lightGreen;
                     .projects-items__item-content{
@@ -60,6 +95,7 @@
                             line-height: 121.18%;
                             letter-spacing: 1.5px;
                             margin-bottom: 18px;
+                            
                         }
                         .page__title-h3,
                         .page__link{
@@ -86,13 +122,26 @@
                 .page__title-h3{
                     color: @color_white;
                     margin-bottom: 16px;
+                    transform: translateY(60px);
+                    transition: all 0.5s ease-out;
                 }
                 .page__link{
                     display: flex;
+                    opacity: 0;
                     align-items: center;
+                    transform: translateY(500px);
+                    transition: all 0.5s ease-out;
                 }
                
             }
+        }
+    }
+    &.animated{
+        .projects-items__item{
+            .animated({
+                .fadeIn();
+                .delay(0.5s);
+            });
         }
     }
 }

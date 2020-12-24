@@ -1,16 +1,19 @@
-let servicesSlider = document.querySelector('.services .page__btn');
-let wrapSlider = document.querySelector('.services-items-wrapper')
-// let w = 10;
-let w = (wrapSlider.scrollWidth / 6) / 2;
-servicesSlider.addEventListener('click', (e)=>{
-    let el = e.target;
-   
-    if(wrapSlider.scrollLeft <= 419){
-        wrapSlider.scrollLeft = w;
-        w += w + 100;
-    }else{
-        w = 0;
-        wrapSlider.scrollLeft = w;
-    }
-    
-});
+
+var slider = tns({
+    container: '#slider',
+    // mode:'gallery',
+    autoWidth: true,
+    edgePadding: 0,
+    gutter: 180,
+    items: 1,
+    slideBy: 'page',
+    autoplay: false,
+    loop: true,
+    controls: true,
+    nav:false,
+    autoplayButtonOutput: false,
+    autoplayHoverPause: true,
+    autoplayTimeout: 2000,
+    nextButton: '.services .page__btn',
+    prevButton: '.services .page__btn_prev',
+  });

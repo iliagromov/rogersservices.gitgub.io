@@ -27,10 +27,12 @@
         }
         &_bg{
             position: absolute;
-            width: 100%;
+            // width: 100%;
+            width: 0;
             height: 100%;
             background-color: @color_blueDark;
             opacity: 0.8;
+            transition: all 1s ease-out;
         }
     }
     &__bg{
@@ -40,5 +42,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         // background-position: -25px -15px;
+    }
+    &.animated{
+        .banner__content_bg{
+            width: 100%;
+           
+        }
+        .page__title-h1,
+        .page__text{
+            .animated({
+                .fadeInLeft();
+                .delay(.5s);
+            });
+        }
+        .page__text{
+            .delay(.8s);
+        }
     }
 }

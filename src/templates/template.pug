@@ -7,9 +7,13 @@ html(lang='ru')
         block base
         block title
         block style
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+            //-[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]
             link(rel='stylesheet', href='css/styles.css', type='text/css')
     body
         block content
         block script
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
             script(src='js/debug-grid-create.js')
             script(src='js/main.js')
+            script(src='js/animations.js')

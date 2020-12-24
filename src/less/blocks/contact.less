@@ -91,9 +91,25 @@
         .size(6);
         display: flex;
         img{
+            height: 100%;
+            width: 100%;
             object-fit: cover;
         }
     }
-    
+    &.animated{
+        .follow-img_bg{
+            .size(3);
+        }
+        .page__title-h2,
+        .page__title-h4,
+        .page__text,
+        .page_address,
+        .page__link{
+            .animated({
+                .fadeIn();
+                .delay(.5s);
+            });
+        }
+    }
     
 }

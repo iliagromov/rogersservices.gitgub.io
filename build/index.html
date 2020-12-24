@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-		<title>Rogersservices</title>
+		<title>Rogersservices</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 	</head>
 	<body>
@@ -12,7 +12,7 @@
 			<div class="header__menu"><span class="line"></span></div>
 		</header>
 		<main class="page">
-			<section class="banner">
+			<section class="banner isAnimate">
 				<div class="banner__content">
 					<div class="banner__content_bg"></div>
 					<div class="banner__content-text">
@@ -23,9 +23,9 @@
 				</div>
 				<div class="banner__bg"></div>
 			</section>
-			<section class="about">
+			<section class="about isAnimate">
 				<div class="about__media">
-					<div class="page_bg-opacity-blueDark"></div><img src="assets/img/img-about.png" alt="">
+					<div class="page_bg-opacity-blueDark"></div><img class="page__img" src="assets/img/img-about.png" alt="">
 				</div>
 				<div class="about__content">
 					<div class="page__subtitle"><span class="page_bold">With more than 1500 employees and 13&nbsp;offices nationwide,</span>Rogers is&nbsp;the largest self-performing electrical and lighting contractor in&nbsp;the&nbsp;US.</div>
@@ -39,45 +39,61 @@
 					</div>
 				</div>
 				<div class="about__media">
-					<div class="page__video">
-						<video controls muted src="https://player.vimeo.com/video/491692296" alt="" poster="assets/img/img-video.png"></video>
-						<button class="page__btn page__btn_play">
-							<div class="page__icon_play"></div>
-						</button>
-					</div>
+					<div class="page__video"><iframe class="vimeo-player" title="vimeo-player" src="https://player.vimeo.com/video/491692296" frameborder="0" allowfullscreen></iframe></div>
 				</div>
 			</section>
-			<section class="services">
+			<section class="services isAnimate">
 				<h2 class="page__title-h2">Services</h2>
+				<button class="page__btn_prev page_hidden"></button>
 				<button class="page__btn">
 					<div class="page__icon page__icon_arrow-white"></div>
 				</button>
 				<div class="services-items-wrapper">
-					<div class="services-items">
-									<div class="services-items__item">
-										<div class="page__icon"><img src="assets/img/icon-electro.png" alt="icon"></div>
-										<h3 class="page__title-h3">Electrical</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
-									</div>
-									<div class="services-items__item">
-										<div class="page__icon"><img src="assets/img/icon-keys.png" alt="icon"></div>
-										<h3 class="page__title-h3">Construction</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
-									</div>
-									<div class="services-items__item">
-										<div class="page__icon"><img src="assets/img/icon-light.png" alt="icon"></div>
-										<h3 class="page__title-h3">Lightning</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
-									</div>
-									<div class="services-items__item">
-										<div class="page__icon"><img src="assets/img/icon-distribution.png" alt="icon"></div>
-										<h3 class="page__title-h3">Distribution</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
-									</div>
-									<div class="services-items__item">
-										<div class="page__icon"><img src="assets/img/icon-cold.png" alt="icon"></div>
-										<h3 class="page__title-h3">HVAC</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
-									</div>
+					<div class="services-items" id="slider">
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-electro.png" alt="icon"></div>
+													<h3 class="page__title-h3">Electrical</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-keys.png" alt="icon"></div>
+													<h3 class="page__title-h3">Construction</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-light.png" alt="icon"></div>
+													<h3 class="page__title-h3">Lightning</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-distribution.png" alt="icon"></div>
+													<h3 class="page__title-h3">Distribution</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-cold.png" alt="icon"></div>
+													<h3 class="page__title-h3">HVAC</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-electro.png" alt="icon"></div>
+													<h3 class="page__title-h3">Electrical</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-keys.png" alt="icon"></div>
+													<h3 class="page__title-h3">Construction</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-light.png" alt="icon"></div>
+													<h3 class="page__title-h3">Lightning</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-distribution.png" alt="icon"></div>
+													<h3 class="page__title-h3">Distribution</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
+												<div class="services-items__item">
+													<div class="page__icon"><img src="assets/img/icon-cold.png" alt="icon"></div>
+													<h3 class="page__title-h3">HVAC</h3><a class="page__link page__link_arrow-green" href="javascript:void(0)">Read more</a>
+												</div>
 					</div>
 				</div>
 			</section>
-			<section class="projects">
+			<section class="projects isAnimate">
 				<div class="projects-items">
 					<div class="projects-items__item projects-items__item-main">
 						<div class="projects-items__item-content">
@@ -134,7 +150,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact">
+			<section class="contact isAnimate">
 				<div class="contact_bg"></div>
 				<div class="contact-content">
 					<div class="contact-content__text">
@@ -150,7 +166,7 @@
 				</div>
 				<div class="contact-map"><img src="assets/img/img-map.png" alt=""></div>
 			</section>
-			<section class="follow">
+			<section class="follow isAnimate">
 				<div class="follow-links">
 					<h3 class="page__title-h3">Follow us:</h3>
 					<div class="page__links"><a class="page__link" href="javascript:void(0)">
@@ -166,8 +182,9 @@
 		</main>
 		<footer class="footer">
 			<div class="copyright">Copyright 2020 Rogers | All Rights Reserved.</div>
-		</footer>
+		</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 		<script src="js/debug-grid-create.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/animations.js"></script>
 	</body>
 </html>

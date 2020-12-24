@@ -33,14 +33,34 @@
         background-position: 99% 0px;
         background-image: url(../assets/img/img-bg-follow.png);
         &_bg{
-            .size(3);
+            // .size(3);
+            width: 0;
             position: absolute;
             
             height: 100%;
             background-color: @color_blueDark;
             opacity: 0.4;
             right: 0;
+            transition: all 1s ease-out;
         }
     }
-    
+    &.animated{
+        .follow-img_bg{
+            .size(3);
+            .animated({
+                .size(3);
+            });
+            .delay(.5s);
+        }
+        .page__title-h3,
+        .page__links{
+            .animated({
+                .fadeInLeft();
+               
+            });
+        }
+        .page__links{
+            .delay(.5s);
+        }
+    }
 }

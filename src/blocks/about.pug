@@ -1,7 +1,7 @@
-section.about
+section.about.isAnimate
     .about__media
         .page_bg-opacity-blueDark
-        img(src="assets/img/img-about.png", alt="")
+        img.page__img(src="assets/img/img-about.png", alt="")
     .about__content
         .page__subtitle
             span.page_bold With more than 1500 employees and 13&nbsp;offices nationwide,
@@ -15,6 +15,6 @@ section.about
     .about__media
         .page__video
 
-            video(controls muted src="https://player.vimeo.com/video/491692296", alt="" poster='assets/img/img-video.png')
-            button.page__btn.page__btn_play
-                .page__icon_play
+            <iframe class="vimeo-player" title="vimeo-player" src="https://player.vimeo.com/video/491692296" frameborder="0" allowfullscreen></iframe>
+            //- button.page__btn.page__btn_play
+            //-     .page__icon_play
